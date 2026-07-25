@@ -73,7 +73,7 @@ async function genP1Quiz() {
 
   // 2. 新しい問題を生成
   const response = await ai.models.generateContent({
-    model: "gemini-2.5-flash",
+    model: "gemini-3.5-flash",
     contents: "「英検準1級の単語」に関する4択クイズを10問作成してください。",
     config: {
       responseMimeType: "application/json",
