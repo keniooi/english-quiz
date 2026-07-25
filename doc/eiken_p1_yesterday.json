@@ -1,0 +1,52 @@
+[
+  {
+    "question": "The company decided to (        ) the new policy due to public opposition.",
+    "options": ["abolish", "cherish", "flourish", "nourish"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "She managed to (        ) a sense of calm during the emergency.",
+    "options": ["dissolve", "maintain", "neglect", "prohibit"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The manager's explanation was so (        ) that everyone understood immediately.",
+    "options": ["ambiguous", "lucid", "obscure", "redundant"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Heavy rain caused the river to (        ) its banks, flooding the nearby fields.",
+    "options": ["overflow", "overlook", "overtake", "overturn"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The scientists are trying to (        ) the mystery surrounding the old manuscript.",
+    "options": ["tangle", "unravel", "clutter", "conceal"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "He was praised for his (        ) contributions to the community project.",
+    "options": ["hostile", "generous", "miserable", "trivial"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The government imposed strict sanctions to (        ) further military action.",
+    "options": ["deter", "foster", "ignite", "prompt"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "It is essential to (        ) accurate records for auditing purposes.",
+    "options": ["retain", "discard", "surrender", "abandon"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The medicine helped (        ) the severe pain in her lower back.",
+    "options": ["aggravate", "alleviate", "complicate", "provoke"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Her (        ) belief in hard work eventually led her to success.",
+    "options": ["unwavering", "fragile", "superficial", "hesitant"],
+    "correctAnswer": 0
+  }
+]

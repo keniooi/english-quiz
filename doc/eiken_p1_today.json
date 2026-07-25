@@ -1,52 +1,102 @@
 [
   {
-    "question": "The company decided to (        ) the new policy due to public opposition.",
-    "options": ["abolish", "cherish", "flourish", "nourish"],
-    "correctAnswer": 0
-  },
-  {
-    "question": "She managed to (        ) a sense of calm during the emergency.",
-    "options": ["dissolve", "maintain", "neglect", "prohibit"],
+    "question": "英単語 'advocate' の正しい意味はどれでしょう？",
+    "options": [
+      "避ける",
+      "主張する、支持する",
+      "評価する",
+      "誇張する"
+    ],
     "correctAnswer": 1
   },
   {
-    "question": "The manager's explanation was so (        ) that everyone understood immediately.",
-    "options": ["ambiguous", "lucid", "obscure", "redundant"],
-    "correctAnswer": 1
+    "question": "英単語 'ambiguous' の正しい意味はどれでしょう？",
+    "options": [
+      "熱心な",
+      "野心的な",
+      "曖昧な、多義的な",
+      "古風な"
+    ],
+    "correctAnswer": 2
   },
   {
-    "question": "Heavy rain caused the river to (        ) its banks, flooding the nearby fields.",
-    "options": ["overflow", "overlook", "overtake", "overturn"],
+    "question": "英単語 'coincide' の正しい意味はどれでしょう？",
+    "options": [
+      "同時に起こる、一致する",
+      "非難する",
+      "協力する",
+      "納得させる"
+    ],
     "correctAnswer": 0
   },
   {
-    "question": "The scientists are trying to (        ) the mystery surrounding the old manuscript.",
-    "options": ["tangle", "unravel", "clutter", "conceal"],
+    "question": "英単語 'diminish' の正しい意味はどれでしょう？",
+    "options": [
+      "区別する",
+      "減少する、衰えさせる",
+      "分配する",
+      "支配する"
+    ],
     "correctAnswer": 1
   },
   {
-    "question": "He was praised for his (        ) contributions to the community project.",
-    "options": ["hostile", "generous", "miserable", "trivial"],
+    "question": "英単語 'eloquent' の正しい意味はどれでしょう？",
+    "options": [
+      "優雅な",
+      "雄弁な、説得力のある",
+      "巨大な",
+      "絶滅した"
+    ],
     "correctAnswer": 1
   },
   {
-    "question": "The government imposed strict sanctions to (        ) further military action.",
-    "options": ["deter", "foster", "ignite", "prompt"],
+    "question": "英単語 'fluctuate' の正しい意味はどれでしょう？",
+    "options": [
+      "変動する、上下する",
+      "繁栄する",
+      "集中する",
+      "予測する"
+    ],
     "correctAnswer": 0
   },
   {
-    "question": "It is essential to (        ) accurate records for auditing purposes.",
-    "options": ["retain", "discard", "surrender", "abandon"],
+    "question": "英単語 'hinder' の正しい意味はどれでしょう？",
+    "options": [
+      "促す",
+      "隠す",
+      "妨げる、遅らせる",
+      "許す"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "英単語 'indispensable' の正しい意味はどれでしょう？",
+    "options": [
+      "不可欠な",
+      "独立した",
+      "不適切な",
+      "区別できない"
+    ],
     "correctAnswer": 0
   },
   {
-    "question": "The medicine helped (        ) the severe pain in her lower back.",
-    "options": ["aggravate", "alleviate", "complicate", "provoke"],
+    "question": "英単語 'lucrative' の正しい意味はどれでしょう？",
+    "options": [
+      "一時的な",
+      "知的な",
+      "寛大な",
+      "利益の上がる、儲かる"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "英単語 'vulnerable' の正しい意味はどれでしょう？",
+    "options": [
+      "貴重な",
+      "傷つきやすい、脆弱な",
+      "自発的な",
+      "活気に満ちた"
+    ],
     "correctAnswer": 1
-  },
-  {
-    "question": "Her (        ) belief in hard work eventually led her to success.",
-    "options": ["unwavering", "fragile", "superficial", "hesitant"],
-    "correctAnswer": 0
   }
 ]
