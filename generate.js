@@ -82,8 +82,8 @@ async function genP1Quiz() {
   });
 
   // 3. 生成された JSON を eiken_p1_today.json に保存
-  fs.writeFileSync("eiken_p1_today.json", response.text);
-  console.log("eiken_p1_today.json の生成が完了しました！");
+  fs.writeFileSync("doc/eiken_p1_today.json", response.text);
+  console.log("doc/eiken_p1_today.json の生成が完了しました！");
 }
 
 genP1Quiz().catch((err) => {
