@@ -10,8 +10,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
-　　 # git push が権限エラーのため追加
+    
+    # git push が権限エラーのため追加
     permissions:
       contents: write
 
