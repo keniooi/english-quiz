@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Please (        ) your room before the guests arrive.",
+    "options": ["tidy", "damage", "waste", "spill"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "He gave us a very (        ) description of his trip to Europe.",
+    "options": ["bored", "detailed", "foolish", "silent"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The weather forecast says it will be (        ) tomorrow afternoon.",
+    "options": ["sunny", "expensive", "polite", "heavy"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "I need to (        ) some money from the bank to buy a new bicycle.",
+    "options": ["lend", "withdraw", "deposit", "earn"],
+    "correctAnswer": 1
+  },
+  {
+    "question": "She felt extremely (        ) before giving her presentation to the class.",
+    "options": ["nervous", "delicious", "convenient", "crowded"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "You should (        ) your seatbelt while riding in the car.",
+    "options": ["fasten", "destroy", "forget", "refuse"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "It is important to protect the natural (        ) for wild animals.",
+    "options": ["environment", "furniture", "ingredient", "instrument"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The teacher asked the students to (        ) their essays by Friday.",
+    "options": ["submit", "borrow", "ignore", "punish"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "We had to (        ) our flight because of the heavy snowstorm.",
+    "options": ["cancel", "enjoy", "invite", "receive"],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Eating fresh vegetables regularly is beneficial for your (        ).",
+    "options": ["health", "salary", "traffic", "shadow"],
+    "correctAnswer": 0
+  }
+]

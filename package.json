@@ -1,0 +1,11 @@
+{
+  "name": "quiz-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "generate": "node generate.js"
+  },
+  "dependencies": {
+    "@google/genai": "^0.1.1"
+  }
+}

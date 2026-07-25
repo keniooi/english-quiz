@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4択クイズ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    button, select, input {
+      -webkit-tap-highlight-color: transparent;
+    }
+    .quiz-card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    .setup-section {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .field-group label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+    select, input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      background-color: #fff;
+    }
+    .primary-btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #6366f1;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+    .primary-btn:hover {
+      background-color: #4f46e5;
+    }
+    .download-btn {
+      padding: 10px 20px;
+      font-size: 14px;
+      background-color: #10b981;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+    .download-btn:hover {
+      background-color: #059669;
+    }
+    .gemini-btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .gemini-btn {
+      padding: 10px 16px;
+      font-size: 14px;
+      background-color: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.2s;
+    }
+    .gemini-btn:hover {
+      background-color: #1d4ed8;
+    }
+    .gemini-btn.sub {
+      background-color: #ea580c;
+    }
+    .gemini-btn.sub:hover {
+      background-color: #c2410c;
+    }
+    .progress {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+    .question {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn-option {
+      padding: 12px 16px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+    .btn-option:hover:not(:disabled) {
+      background-color: #eef2ff;
+      border-color: #6366f1;
+    }
+    .btn-option.correct {
+      background-color: #d1fae5;
+      border-color: #10b981;
+      font-weight: bold;
+    }
+    .btn-option.wrong {
+      background-color: #fee2e2;
+      border-color: #ef4444;
+    }
+    .feedback {
+      margin-top: 16px;
+      font-weight: bold;
+      font-size: 16px;
+      min-height: 24px;
+    }
+    .json-output {
+      margin-top: 20px;
+      text-align: left;
+    }
+    .json-output pre {
+      background-color: #1e293b;
+      color: #f8fafc;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 13px;
+      max-height: 200px;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+  </style>
+</head>
+<body>
+
+<div class="quiz-card">
+  <!-- 1. クイズデータ選択エリア -->
+  <div id="select-container">
+    <h2>クイズを選択</h2>
+    <div class="setup-section">
+      <div class="field-group">
+        <label for="select-p1">📘 英検準1級</label>
+        <select id="select-p1" onchange="onSelectChange('p1')">
+          <option value="">-- 選択してください --</option>
+          <option value="eiken_p1_today.json">準1級：今日の問題</option>
+          <option value="eiken_p1_yesterday.json">準1級：昨日の問題</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label for="select-p2">📗 英検準2級</label>
+        <select id="select-p2" onchange="onSelectChange('p2')">
+          <option value="">-- 選択してください --</option>
+          <option value="eiken_p2_today.json">準2級：今日の問題</option>
+          <option value="eiken_p2_yesterday.json">準2級：昨日の問題</option>
+        </select>
+      </div>
+
+      <p style="text-align: center; color: #888; font-size: 12px; margin: 0;">または</p>
+
+      <div class="field-group">
+        <label for="file-input">📂 ローカルJSONファイルをアップロード</label>
+        <input type="file" id="file-input" accept=".json" onchange="onSelectChange('file')">
+      </div>
+
+      <button class="primary-btn" onclick="startQuiz()">クイズを開始する</button>
+    </div>
+  </div>
+
+  <!-- 2. クイズ実行エリア -->
+  <div id="quiz-container" style="display: none;">
+    <div id="progress" class="progress"></div>
+    <div id="question" class="question"></div>
+    <div id="options" class="options"></div>
+    <div id="feedback" class="feedback"></div>
+    <button id="next-btn" class="primary-btn" style="display: none; margin-top: 16px;" onclick="nextQuestion()">次の問題へ</button>
+  </div>
+
+  <!-- 3. 結果表示エリア -->
+  <div id="result-container" style="display: none;">
+    <h2>クイズ終了！</h2>
+    <p id="score-text"></p>
+
+    <div class="gemini-btn-group">
+      <button class="gemini-btn" onclick="askGemini('all')">✨ 全問の解説用プロンプトをコピーしてGeminiを開く</button>
+      <button id="gemini-wrong-btn" class="gemini-btn sub" onclick="askGemini('wrong')">⚠️ 間違えた問題のみコピーしてGeminiを開く</button>
+    </div>
+    
+    <div id="wrong-answers-container" class="json-output" style="display: none;">
+      <button class="download-btn" onclick="downloadIncorrectJSON()">📥 不正解JSONをダウンロード</button>
+      <h3>不正解データ (JSON)</h3>
+      <pre><code id="json-result"></code></pre>
+    </div>
+
+    <button class="primary-btn" style="margin-top: 16px;" onclick="restartQuiz()">最初の画面に戻る</button>
+  </div>
+</div>
+
+<script>
+  let quizData = [];
+  let currentQuestionIndex = 0;
+  let score = 0;
+  let userAnswers = [];
+  let incorrectAnswers = [];
+
+  function onSelectChange(target) {
+    if (target !== 'p1') document.getElementById("select-p1").value = "";
+    if (target !== 'p2') document.getElementById("select-p2").value = "";
+    if (target !== 'file') document.getElementById("file-input").value = "";
+  }
+
+  async function startQuiz() {
+    const p1Value = document.getElementById("select-p1").value;
+    const p2Value = document.getElementById("select-p2").value;
+    const fileInput = document.getElementById("file-input");
+
+    let selectedPath = p1Value || p2Value;
+
+    if (fileInput.files.length > 0) {
+      const file = fileInput.files[0];
+      try {
+        const text = await file.text();
+        quizData = JSON.parse(text);
+      } catch (e) {
+        alert("JSONファイルの読み込みに失敗しました。");
+        return;
+      }
+    } else if (selectedPath) {
+      try {
+        const response = await fetch(selectedPath);
+        if (!response.ok) throw new Error();
+        quizData = await response.json();
+      } catch (e) {
+        alert("クイズデータの取得に失敗しました。");
+        return;
+      }
+    } else {
+      alert("クイズを選択してください。");
+      return;
+    }
+
+    if (!Array.isArray(quizData) || quizData.length === 0) {
+      alert("有効なクイズデータが含まれていません。");
+      return;
+    }
+
+    document.getElementById("select-container").style.display = "none";
+    document.getElementById("quiz-container").style.display = "block";
+    loadQuestion();
+  }
+
+  function loadQuestion() {
+    const currentQuiz = quizData[currentQuestionIndex];
+    document.getElementById("progress").textContent = `問題 ${currentQuestionIndex + 1} / ${quizData.length}`;
+    document.getElementById("question").textContent = currentQuiz.question;
+    
+    const optionsContainer = document.getElementById("options");
+    optionsContainer.innerHTML = "";
+    document.getElementById("feedback").textContent = "";
+    document.getElementById("next-btn").style.display = "none";
+
+    currentQuiz.options.forEach((optionText, index) => {
+      const button = document.createElement("button");
+      button.className = "btn-option";
+      button.textContent = optionText;
+      button.onclick = () => selectOption(index);
+      optionsContainer.appendChild(button);
+    });
+  }
+
+  function selectOption(selectedIndex) {
+    const currentQuiz = quizData[currentQuestionIndex];
+    const buttons = document.querySelectorAll(".btn-option");
+    const feedback = document.getElementById("feedback");
+
+    buttons.forEach((btn, index) => {
+      btn.disabled = true;
+      if (index === currentQuiz.correctAnswer) {
+        btn.classList.add("correct");
+      }
+    });
+
+    const isCorrect = selectedIndex === currentQuiz.correctAnswer;
+    
+    userAnswers.push({
+      ...currentQuiz,
+      userAnswer: selectedIndex,
+      isCorrect: isCorrect
+    });
+
+    if (isCorrect) {
+      score++;
+      feedback.textContent = "⭕️ 正解！";
+      feedback.style.color = "#10b981";
+    } else {
+      buttons[selectedIndex].classList.add("wrong");
+      feedback.textContent = "❌ 不正解...";
+      feedback.style.color = "#ef4444";
+
+      incorrectAnswers.push({
+        ...currentQuiz,
+        userAnswer: selectedIndex
+      });
+    }
+
+    document.getElementById("next-btn").style.display = "inline-block";
+  }
+
+  function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizData.length) {
+      loadQuestion();
+    } else {
+      showResult();
+    }
+  }
+
+  function showResult() {
+    document.getElementById("quiz-container").style.display = "none";
+    document.getElementById("result-container").style.display = "block";
+    document.getElementById("score-text").textContent = `${quizData.length}问中 ${score}問 正解でした！`;
+
+    const wrongBtn = document.getElementById("gemini-wrong-btn");
+    const jsonContainer = document.getElementById("wrong-answers-container");
+
+    if (incorrectAnswers.length > 0) {
+      document.getElementById("json-result").textContent = JSON.stringify(incorrectAnswers, null, 2);
+      jsonContainer.style.display = "block";
+      wrongBtn.style.display = "block";
+    } else {
+      jsonContainer.style.display = "none";
+      wrongBtn.style.display = "none";
+    }
+  }
+
+  // ⭐️ 改善版：英文と和訳を並べて提示させるプロンプト構造
+  async function askGemini(mode) {
+    const targetData = (mode === 'wrong') ? incorrectAnswers : userAnswers;
+
+    if (targetData.length === 0) {
+      alert("対象となる問題データがありません。");
+      return;
+    }
+
+    let prompt = "以下の英語（英検）クイズの問題について、解説を出力してください。\n\n";
+
+    targetData.forEach((q, idx) => {
+      prompt += `【問題 ${idx + 1}】\n`;
+      prompt += `問題文(原文): ${q.question}\n`;
+      prompt += `選択肢:\n`;
+      q.options.forEach((opt, optIdx) => {
+        prompt += `  ${optIdx + 1}. ${opt}\n`;
+      });
+      prompt += `正解: ${q.options[q.correctAnswer]}\n`;
+      if (q.userAnswer !== undefined) {
+        prompt += `あなたの回答: ${q.options[q.userAnswer]} (${q.userAnswer === q.correctAnswer ? "正解" : "不正解"})\n`;
+      }
+      prompt += `\n`;
+    });
+
+    prompt += "【出力フォーマット指定】\n";
+    prompt += "各問題について、必ず以下の構成・順番で解説してください：\n\n";
+    prompt += "1. **英文と日本語訳（比較）**\n";
+    prompt += "   - 正解を入れた完成版の英文を表示し、その直下に日本語訳を並べて比較できるように記載してください。\n";
+    prompt += "2. **正解の解説**\n";
+    prompt += "   - なぜその選択肢が正解になるのか、文法や重要な単語・熟語の意味を含めて解説してください。\n";
+    prompt += "3. **他の選択肢の解説**\n";
+    prompt += "   - 他の選択肢の単語・熟語の意味を簡潔に解説してください。";
+
+    try {
+      await navigator.clipboard.writeText(prompt);
+      alert("プロンプトをコピーしました！\nGeminiが開いたら、入力欄に貼り付け（Ctrl + V）してください。");
+      window.open("https://gemini.google.com/app", "_blank");
+    } catch (err) {
+      alert("クリップボードへのコピーに失敗しました。");
+    }
+  }
+
+  function downloadIncorrectJSON() {
+    if (incorrectAnswers.length === 0) return;
+
+    const now = new Date();
+    const pad = (n) => String(n).padStart(2, '0');
+    const timestamp = `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}-${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
+
+    const filename = `incorrect-answers_${timestamp}.json`;
+
+    const jsonStr = JSON.stringify(incorrectAnswers, null, 2);
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function restartQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    userAnswers = [];
+    incorrectAnswers = [];
+    quizData = [];
+    
+    document.getElementById("select-p1").selectedIndex = 0;
+    document.getElementById("select-p2").selectedIndex = 0;
+    document.getElementById("file-input").value = "";
+
+    document.getElementById("result-container").style.display = "none";
+    document.getElementById("select-container").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
