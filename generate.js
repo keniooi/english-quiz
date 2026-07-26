@@ -65,6 +65,19 @@ function rotateFiles() {
   }
 }
 
+const prompt = `の語彙力を測る4択の穴埋め問題を10問作成してください。
+
+【厳格なフォーマット指定】
+- 各問題の "question" は、単語が入る場所を "(        )" とした「英語の文」にしてください。日本語の訳や解説は含めないでください。
+- "options" は、文脈に適合する正解1つと、英検準1級レベルの適切なダミー（紛らわしい選択肢）3つで構成してください。
+- "correctAnswer" は、options 配列内の正解のインデックス（0〜3）を数値で指定してください。
+
+【被り防止・バリエーションの指示】
+- 10問それぞれで異なる英単語をターゲット（正解）にしてください。
+- 動詞、形容詞、名詞、副詞など、品詞の偏りがないようにバランスよく出題してください。
+- 単一の文脈（ビジネスなど）に偏らず、社会、環境、日常、科学など多様なテーマの例文を作成してください。
+`;
+
 async function genP1Quiz() {
   // 1. まず古いファイルを移動・整理する
   rotateFiles();
@@ -74,7 +87,7 @@ async function genP1Quiz() {
   // 2. 新しい問題を生成
   const response = await ai.models.generateContent({
     model: "gemini-3.5-flash",
-    contents: "「英検準1級の単語」に関する4択クイズを10問作成してください。",
+    contents: "英検準1級レベル" + prompt,
     config: {
       responseMimeType: "application/json",
       responseSchema: responseSchema,
