@@ -55,9 +55,9 @@ function rotateFiles() {
   twoDaysAgo.setDate(today.getDate() - 2);
   const twoDaysAgoStr = formatDate(twoDaysAgo); // 例: "2026-07-23"
 
-  const todayFile = "doc/eiken_p1_today.json";
-  const yesterdayFile = "doc/eiken_p1_yesterday.json";
-  const twoDaysAgoFile = `doc/eiken_p1_${twoDaysAgoStr}.json`;
+  const todayFile = "docs/eiken_p1_today.json";
+  const yesterdayFile = "docs/eiken_p1_yesterday.json";
+  const twoDaysAgoFile = `docs/eiken_p1_${twoDaysAgoStr}.json`;
 
   // 1. もし eiken_p1_yesterday.json が存在したら、一昨日の日付のファイル名にリネーム
   if (fs.existsSync(yesterdayFile)) {
@@ -127,8 +127,8 @@ async function genP1Quiz() {
   });
 
   // 3. 生成された JSON を eiken_p1_today.json に保存
-  fs.writeFileSync("doc/eiken_p1_today.json", response.text);
-  console.log("doc/eiken_p1_today.json の生成が完了しました！");
+  fs.writeFileSync("docs/eiken_p1_today.json", response.text);
+  console.log("docs/eiken_p1_today.json の生成が完了しました！");
 }
 
 async function genQuiz() {
