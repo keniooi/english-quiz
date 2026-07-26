@@ -1,102 +1,102 @@
 [
   {
-    "question": "英単語 'advocate' の正しい意味はどれでしょう？",
+    "question": "The doctor prescribed a new medication to (        ) the patient's chronic back pain.",
     "options": [
-      "避ける",
-      "主張する、支持する",
-      "評価する",
-      "誇張する"
+      "alleviate",
+      "aggravate",
+      "anticipate",
+      "accumulate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Investing in renewable energy has proven to be a highly (        ) venture for the company.",
+    "options": [
+      "vulnerable",
+      "lucrative",
+      "redundant",
+      "trivial"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "英単語 'ambiguous' の正しい意味はどれでしょう？",
+    "question": "The researchers found a major (        ) between the theoretical calculations and the actual experimental results.",
     "options": [
-      "熱心な",
-      "野心的な",
-      "曖昧な、多義的な",
-      "古風な"
+      "discrepancy",
+      "consequence",
+      "obstacle",
+      "prosperity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "She (        ) agreed to work overtime on Friday evening, even though she had plans with her family.",
+    "options": [
+      "mutually",
+      "tentatively",
+      "reluctantly",
+      "persistently"
     ],
     "correctAnswer": 2
   },
   {
-    "question": "英単語 'coincide' の正しい意味はどれでしょう？",
+    "question": "The local organization continues to (        ) for the rights of underprivileged children in the community.",
     "options": [
-      "同時に起こる、一致する",
-      "非難する",
-      "協力する",
-      "納得させる"
+      "advocate",
+      "prohibit",
+      "neglect",
+      "compromise"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "英単語 'diminish' の正しい意味はどれでしょう？",
+    "question": "To protect the ecosystem, we must find more (        ) ways to utilize our natural resources.",
     "options": [
-      "区別する",
-      "減少する、衰えさせる",
-      "分配する",
-      "支配する"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "英単語 'eloquent' の正しい意味はどれでしょう？",
-    "options": [
-      "優雅な",
-      "雄弁な、説得力のある",
-      "巨大な",
-      "絶滅した"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "英単語 'fluctuate' の正しい意味はどれでしょう？",
-    "options": [
-      "変動する、上下する",
-      "繁栄する",
-      "集中する",
-      "予測する"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "英単語 'hinder' の正しい意味はどれでしょう？",
-    "options": [
-      "促す",
-      "隠す",
-      "妨げる、遅らせる",
-      "許す"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "英単語 'indispensable' の正しい意味はどれでしょう？",
-    "options": [
-      "不可欠な",
-      "独立した",
-      "不適切な",
-      "区別できない"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "英単語 'lucrative' の正しい意味はどれでしょう？",
-    "options": [
-      "一時的な",
-      "知的な",
-      "寛大な",
-      "利益の上がる、儲かる"
+      "superficial",
+      "unprecedented",
+      "hostile",
+      "sustainable"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "英単語 'vulnerable' の正しい意味はどれでしょう？",
+    "question": "The company offered a generous bonus as an (        ) for employees to meet their sales targets.",
     "options": [
-      "貴重な",
-      "傷つきやすい、脆弱な",
-      "自発的な",
-      "活気に満ちた"
+      "incident",
+      "incentive",
+      "obstacle",
+      "appraisal"
     ],
     "correctAnswer": 1
+  },
+  {
+    "question": "The introduction of automated technology has (        ) reduced the time required to manufacture automobiles.",
+    "options": [
+      "coincidentally",
+      "scarcely",
+      "drastically",
+      "unanimously"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "If we do not address air pollution immediately, the quality of life in urban areas will (        ).",
+    "options": [
+      "deteriorate",
+      "accelerate",
+      "validate",
+      "coincide"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The accountant was highly praised for her (        ) attention to detail during the financial audit.",
+    "options": [
+      "meticulous",
+      "arbitrary",
+      "indifferent",
+      "skeptical"
+    ],
+    "correctAnswer": 0
   }
 ]
