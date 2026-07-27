@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "generate": "node generate.js"
+    "generate": "node generate.js",
+    "broadcast": "node broadcast.js"
   },
   "dependencies": {
     "@google/genai": "latest"
