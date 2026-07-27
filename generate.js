@@ -130,7 +130,7 @@ async function genP2Quiz() {
 async function genQuiz() {
   rotateFiles();
   await genP1Quiz();
-  await getP2Quiz();
+  await genP2Quiz();
 }
 
 genQuiz().catch((err) => {
