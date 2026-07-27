@@ -55,21 +55,36 @@ function rotateFiles() {
   twoDaysAgo.setDate(today.getDate() - 2);
   const twoDaysAgoStr = formatDate(twoDaysAgo); // 例: "2026-07-23"
 
-  const todayFile = "docs/eiken_p1_today.json";
-  const yesterdayFile = "docs/eiken_p1_yesterday.json";
-  const twoDaysAgoFile = `docs/eiken_p1_${twoDaysAgoStr}.json`;
+  const todayFileP1 = "docs/eiken_p1_today.json";
+  const yesterdayFileP1 = "docs/eiken_p1_yesterday.json";
+  const twoDaysAgoFileP1 = `docs/eiken_p1_${twoDaysAgoStr}.json`;
+
+  const todayFileP2 = "docs/eiken_p2_today.json";
+  const yesterdayFileP2 = "docs/eiken_p2_yesterday.json";
+  const twoDaysAgoFileP2 = `docs/eiken_p2_${twoDaysAgoStr}.json`;
 
   // 1. もし eiken_p1_yesterday.json が存在したら、一昨日の日付のファイル名にリネーム
-  if (fs.existsSync(yesterdayFile)) {
-    fs.renameSync(yesterdayFile, twoDaysAgoFile);
-    console.log(`Rotated: ${yesterdayFile} -> ${twoDaysAgoFile}`);
+  if (fs.existsSync(yesterdayFileP1)) {
+    fs.renameSync(yesterdayFileP1, twoDaysAgoFileP1);
+    console.log(`Rotated: ${yesterdayFileP1} -> ${twoDaysAgoFileP1}`);
+  }
+
+  if (fs.existsSync(yesterdayFileP2)) {
+    fs.renameSync(yesterdayFileP2, twoDaysAgoFileP2);
+    console.log(`Rotated: ${yesterdayFileP2} -> ${twoDaysAgoFileP2}`);
   }
 
   // 2. もし eiken_p1_today.json が存在したら、eiken_p1_yesterday.json にリネーム
-  if (fs.existsSync(todayFile)) {
-    fs.renameSync(todayFile, yesterdayFile);
-    console.log(`Rotated: ${todayFile} -> ${yesterdayFile}`);
+  if (fs.existsSync(todayFileP1)) {
+    fs.renameSync(todayFileP1, yesterdayFileP1);
+    console.log(`Rotated: ${todayFileP1} -> ${yesterdayFileP1}`);
   }
+
+  if (fs.existsSync(todayFileP2)) {
+    fs.renameSync(todayFileP2, yesterdayFileP2);
+    console.log(`Rotated: ${todayFileP2} -> ${yesterdayFileP2}`);
+  }
+  
 }
 
 // 🔔 LINEにメッセージを送信する関数
@@ -111,12 +126,8 @@ const prompt = `の語彙力を測る4択の穴埋め問題を10問作成して�
 `;
 
 async function genP1Quiz() {
-  // 1. まず古いファイルを移動・整理する
-  rotateFiles();
-
   console.log("Gemini API で英検準1級クイズを生成中...");
-
-  // 2. 新しい問題を生成
+  // 1. 新しい問題を生成
   const response = await ai.models.generateContent({
     model: "gemini-3.5-flash",
     contents: "英検準1級レベル" + prompt,
@@ -126,13 +137,32 @@ async function genP1Quiz() {
     },
   });
 
-  // 3. 生成された JSON を eiken_p1_today.json に保存
+  // 2. 生成された JSON を eiken_p1_today.json に保存
   fs.writeFileSync("docs/eiken_p1_today.json", response.text);
   console.log("docs/eiken_p1_today.json の生成が完了しました！");
 }
 
+async function genP2Quiz() {
+  console.log("Gemini API で英検準2級クイズを生成中...");
+  // 1. 新しい問題を生成
+  const response = await ai.models.generateContent({
+    model: "gemini-3.5-flash",
+    contents: "英検準2級レベル" + prompt,
+    config: {
+      responseMimeType: "application/json",
+      responseSchema: responseSchema,
+    },
+  });
+
+  // 2. 生成された JSON を eiken_p2_today.json に保存
+  fs.writeFileSync("docs/eiken_p2_today.json", response.text);
+  console.log("docs/eiken_p2_today.json の生成が完了しました！");
+}
+
 async function genQuiz() {
+  rotateFiles();
   await genP1Quiz();
+  await getP2Quiz();
   await sendLineBroadcast(
     `📚 【英検クイズ】\nの問題が新しく生成されました！今日の学習を始めましょう！\nhttps://keniooi.github.io/english-quiz/`
   );
