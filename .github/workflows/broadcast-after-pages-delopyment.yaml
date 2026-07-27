@@ -1,4 +1,4 @@
-name: Broadcast After Pages Deployment
+name: Broadcast after pages-build-deployment
 
 on:
   # pages-build-deployment ワークフローが完了した時に起動
