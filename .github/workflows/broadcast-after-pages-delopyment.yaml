@@ -1,0 +1,36 @@
+name: Broadcast After Pages Deployment
+
+on:
+  # pages-build-deployment ワークフローが完了した時に起動
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
+jobs:
+  on-success:
+    # デプロイが成功した場合のみ実行
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. コードをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      # 2. Node.js のセットアップ
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      # 3. 依存ライブラリのインストール
+      - name: Install dependencies
+        run: npm install
+
+      # 4. スクリプトの実行（Secrets 経由で API キーを渡す）
+      - name: Send line message broadcast
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+        run: npm run broadcast
