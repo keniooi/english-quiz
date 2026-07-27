@@ -1,0 +1,102 @@
+[
+  {
+    "question": "英単語 'advocate' の正しい意味はどれでしょう？",
+    "options": [
+      "避ける",
+      "主張する、支持する",
+      "評価する",
+      "誇張する"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "英単語 'ambiguous' の正しい意味はどれでしょう？",
+    "options": [
+      "熱心な",
+      "野心的な",
+      "曖昧な、多義的な",
+      "古風な"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "英単語 'coincide' の正しい意味はどれでしょう？",
+    "options": [
+      "同時に起こる、一致する",
+      "非難する",
+      "協力する",
+      "納得させる"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "英単語 'diminish' の正しい意味はどれでしょう？",
+    "options": [
+      "区別する",
+      "減少する、衰えさせる",
+      "分配する",
+      "支配する"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "英単語 'eloquent' の正しい意味はどれでしょう？",
+    "options": [
+      "優雅な",
+      "雄弁な、説得力のある",
+      "巨大な",
+      "絶滅した"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "英単語 'fluctuate' の正しい意味はどれでしょう？",
+    "options": [
+      "変動する、上下する",
+      "繁栄する",
+      "集中する",
+      "予測する"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "英単語 'hinder' の正しい意味はどれでしょう？",
+    "options": [
+      "促す",
+      "隠す",
+      "妨げる、遅らせる",
+      "許す"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "英単語 'indispensable' の正しい意味はどれでしょう？",
+    "options": [
+      "不可欠な",
+      "独立した",
+      "不適切な",
+      "区別できない"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "英単語 'lucrative' の正しい意味はどれでしょう？",
+    "options": [
+      "一時的な",
+      "知的な",
+      "寛大な",
+      "利益の上がる、儲かる"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "英単語 'vulnerable' の正しい意味はどれでしょう？",
+    "options": [
+      "貴重な",
+      "傷つきやすい、脆弱な",
+      "自発的な",
+      "活気に満ちた"
+    ],
+    "correctAnswer": 1
+  }
+]
