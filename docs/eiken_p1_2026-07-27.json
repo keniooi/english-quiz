@@ -1,0 +1,102 @@
+[
+  {
+    "question": "The doctor prescribed a new medication to (        ) the patient's chronic back pain.",
+    "options": [
+      "alleviate",
+      "aggravate",
+      "anticipate",
+      "accumulate"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Investing in renewable energy has proven to be a highly (        ) venture for the company.",
+    "options": [
+      "vulnerable",
+      "lucrative",
+      "redundant",
+      "trivial"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The researchers found a major (        ) between the theoretical calculations and the actual experimental results.",
+    "options": [
+      "discrepancy",
+      "consequence",
+      "obstacle",
+      "prosperity"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "She (        ) agreed to work overtime on Friday evening, even though she had plans with her family.",
+    "options": [
+      "mutually",
+      "tentatively",
+      "reluctantly",
+      "persistently"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "The local organization continues to (        ) for the rights of underprivileged children in the community.",
+    "options": [
+      "advocate",
+      "prohibit",
+      "neglect",
+      "compromise"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "To protect the ecosystem, we must find more (        ) ways to utilize our natural resources.",
+    "options": [
+      "superficial",
+      "unprecedented",
+      "hostile",
+      "sustainable"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "The company offered a generous bonus as an (        ) for employees to meet their sales targets.",
+    "options": [
+      "incident",
+      "incentive",
+      "obstacle",
+      "appraisal"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The introduction of automated technology has (        ) reduced the time required to manufacture automobiles.",
+    "options": [
+      "coincidentally",
+      "scarcely",
+      "drastically",
+      "unanimously"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "If we do not address air pollution immediately, the quality of life in urban areas will (        ).",
+    "options": [
+      "deteriorate",
+      "accelerate",
+      "validate",
+      "coincide"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The accountant was highly praised for her (        ) attention to detail during the financial audit.",
+    "options": [
+      "meticulous",
+      "arbitrary",
+      "indifferent",
+      "skeptical"
+    ],
+    "correctAnswer": 0
+  }
+]
