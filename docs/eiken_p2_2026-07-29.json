@@ -1,0 +1,102 @@
+[
+  {
+    "question": "To improve your health, you should (        ) the amount of sugar you eat every day.",
+    "options": [
+      "reduce",
+      "enhance",
+      "postpone",
+      "abolish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Many organizations are working together to find solutions to air (        ) in big cities.",
+    "options": [
+      "inflation",
+      "congestion",
+      "pollution",
+      "nutrition"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "It is a (        ) belief that drinking warm milk before bed helps people sleep better.",
+    "options": [
+      "vague",
+      "common",
+      "tedious",
+      "rigorous"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "While we were walking in the park, the sky turned dark and it (        ) started to rain.",
+    "options": [
+      "initially",
+      "reluctantly",
+      "scarcely",
+      "suddenly"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "We need to plant more trees to (        ) the natural habitat of wild animals.",
+    "options": [
+      "abandon",
+      "protect",
+      "negotiate",
+      "evaluate"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The bus driver asked every (        ) to wear a seatbelt for safety.",
+    "options": [
+      "ancestor",
+      "opponent",
+      "passenger",
+      "descendant"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Online shopping is very (        ) because you can buy things without leaving your home.",
+    "options": [
+      "convenient",
+      "redundant",
+      "superficial",
+      "obsolete"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "After practicing every day, my English communication skills (        ) improved.",
+    "options": [
+      "instantly",
+      "desperately",
+      "gradually",
+      "deliberately"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "The company plans to (        ) a new system to make work more efficient.",
+    "options": [
+      "implement",
+      "transform",
+      "modify",
+      "introduce"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "The main (        ) of this meeting is to decide on the budget for next year.",
+    "options": [
+      "obligation",
+      "purpose",
+      "obstacle",
+      "hypothesis"
+    ],
+    "correctAnswer": 1
+  }
+]

@@ -1,1 +1,102 @@
-[{"question":"The architect's (        ) attention to detail is evident in the seamless design of the new library.","options":["meticulous","superficial","reluctant","hazardous"],"correctAnswer":0},{"question":"The weather conditions (        ) so rapidly that the outdoor concert had to be cancelled.","options":["accumulated","deteriorated","fluctuated","coincided"],"correctAnswer":1},{"question":"The successful (        ) of the new environmental policy led to a significant reduction in waste.","options":["obstacle","implementation","transaction","paradox"],"correctAnswer":1},{"question":"She (        ) deleted the important email while trying to organize her inbox.","options":["deliberately","profoundly","inadvertently","mutually"],"correctAnswer":2},{"question":"Coastal cities are highly (        ) to the impacts of rising sea levels and extreme weather events.","options":["vulnerable","immune","coherent","redundant"],"correctAnswer":0},{"question":"The government introduced new tax cuts in an effort to (        ) the financial burden on middle-class families.","options":["aggravate","simulate","alleviate","dominate"],"correctAnswer":2},{"question":"The unexpected increase in inflation was a direct (        ) of the sudden rise in oil prices.","options":["consequence","perspective","incentive","deficiency"],"correctAnswer":0},{"question":"The scientist published his initial findings in 2018 and (        ) won the Nobel Prize for his research.","options":["previously","subsequently","conversely","inherently"],"correctAnswer":1},{"question":"Many environmentalists (        ) for the immediate reduction of single-use plastics to protect marine life.","options":["advocate","challenge","dismiss","transition"],"correctAnswer":0},{"question":"The instructions for the assignment were so (        ) that many students were confused about what to do.","options":["ambiguous","prestigious","unanimous","tedious"],"correctAnswer":0}]
+[
+  {
+    "question": "The government decided to introduce a new tax system to provide a financial (        ) for companies that reduce carbon emissions.",
+    "options": [
+      "incentive",
+      "obstacle",
+      "scarcity",
+      "deficit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Many coastal cities are highly (        ) to the effects of rising sea levels caused by climate change.",
+    "options": [
+      "subsequent",
+      "negligible",
+      "immune",
+      "vulnerable"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "The local community group has been working to (        ) the rights of minority populations in the region.",
+    "options": [
+      "advocate",
+      "suppress",
+      "jeopardize",
+      "counterfeit"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The new medication is designed to (        ) the pain associated with chronic joint inflammation.",
+    "options": [
+      "aggravate",
+      "alleviate",
+      "prolong",
+      "fluctuate"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "She is known for her (        ) research, leaving no detail unexamined in her historical studies.",
+    "options": [
+      "haphazard",
+      "ambiguous",
+      "superficial",
+      "meticulous"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Although the two situations seemed different, they were (        ) linked by the same underlying economic problems.",
+    "options": [
+      "inherently",
+      "superficially",
+      "scarcely",
+      "erroneously"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Using outdated software can pose a serious security (        ) to the entire corporate network.",
+    "options": [
+      "remedy",
+      "hazard",
+      "benefit",
+      "heritage"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "The company's profits dropped (        ) after the sudden increase in raw material costs.",
+    "options": [
+      "minimally",
+      "monotonously",
+      "drastically",
+      "unanimously"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "A sudden drop in temperature can (        ) a chemical reaction in this specific type of polymer.",
+    "options": [
+      "trigger",
+      "hinder",
+      "divert",
+      "postpone"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The instructions on the exam paper were so (        ) that many students misunderstood what they were supposed to do.",
+    "options": [
+      "explicit",
+      "compatible",
+      "plausible",
+      "ambiguous"
+    ],
+    "correctAnswer": 3
+  }
+]

@@ -1,102 +1,102 @@
 [
   {
-    "question": "We should try to (        ) the amount of plastic waste we produce every day.",
+    "question": "We must do our best to (        ) the environment from pollution.",
     "options": [
-      "implement",
-      "reduce",
-      "fluctuate",
-      "deteriorate"
+      "protect",
+      "investigate",
+      "estimate",
+      "abandon"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Many tourists visit Kyoto to experience (        ) Japanese culture.",
+    "options": [
+      "vague",
+      "traditional",
+      "hostile",
+      "prompt"
     ],
     "correctAnswer": 1
   },
   {
-    "question": "Online shopping is very (        ) because you can buy things without leaving your house.",
+    "question": "The flight was delayed, so every (        ) had to wait at the airport.",
     "options": [
-      "conspicuous",
-      "meticulous",
-      "vulnerable",
-      "convenient"
+      "substitute",
+      "applicant",
+      "passenger",
+      "heritage"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "I (        ) bought a new smartphone, and it is very fast.",
+    "options": [
+      "precisely",
+      "mutually",
+      "reluctantly",
+      "recently"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "After a long flight, they finally arrived at their holiday (        ) in Spain.",
+    "question": "She practices playing the piano every day to (        ) her skills.",
     "options": [
-      "destination",
-      "controversy",
-      "precedent",
-      "congestion"
+      "improve",
+      "evaluate",
+      "negotiate",
+      "diminish"
     ],
     "correctAnswer": 0
   },
   {
-    "question": "The earth's temperature is (        ) rising due to global warming.",
+    "question": "Online shopping is very (        ) because we can buy things anytime.",
     "options": [
-      "simultaneously",
-      "reluctantly",
+      "artificial",
+      "convenient",
+      "superficial",
+      "initial"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "People should separate their (        ) into plastic, paper, and cans.",
+    "options": [
+      "garbage",
+      "obstacle",
+      "emission",
+      "nutrition"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The climate of this region is (        ) changing due to global warming.",
+    "options": [
+      "inevitably",
+      "thoroughly",
       "gradually",
-      "perpetually"
+      "deliberately"
     ],
     "correctAnswer": 2
   },
   {
-    "question": "Teachers always (        ) their students to ask questions during class.",
+    "question": "Regular exercise and a balanced diet can help (        ) many illnesses.",
     "options": [
-      "subsidize",
-      "encourage",
-      "scrutinize",
-      "jeopardize"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "They wore (        ) Japanese clothes, such as kimonos, for the New Year festival.",
-    "options": [
-      "ambiguous",
-      "formidable",
-      "traditional",
-      "redundant"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Many people are worried about air (        ) caused by factory smoke.",
-    "options": [
-      "discrepancy",
-      "pollution",
-      "infrastructure",
-      "accumulation"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "It started to rain heavily, but (        ) I had an umbrella in my bag.",
-    "options": [
-      "fortunately",
-      "seemingly",
-      "inherently",
-      "inadvertently"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Washing your hands is one of the best ways to (        ) the spread of colds.",
-    "options": [
-      "alleviate",
-      "advocate",
-      "foster",
+      "accumulate",
+      "interpret",
+      "dominate",
       "prevent"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "Studying abroad is a great (        ) to learn about different cultures and make new friends.",
+    "question": "In my (        ), we should reduce the use of plastic bags to save the oceans.",
     "options": [
-      "negligence",
-      "constraint",
-      "opportunity",
-      "transaction"
+      "opinion",
+      "hypothesis",
+      "obligation",
+      "consensus"
     ],
-    "correctAnswer": 2
+    "correctAnswer": 0
   }
 ]

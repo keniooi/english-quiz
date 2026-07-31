@@ -1,102 +1,102 @@
 [
   {
-    "question": "To improve your health, you should (        ) the amount of sugar you eat every day.",
-    "options": [
-      "reduce",
-      "enhance",
-      "postpone",
-      "abolish"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "Many organizations are working together to find solutions to air (        ) in big cities.",
-    "options": [
-      "inflation",
-      "congestion",
-      "pollution",
-      "nutrition"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "It is a (        ) belief that drinking warm milk before bed helps people sleep better.",
-    "options": [
-      "vague",
-      "common",
-      "tedious",
-      "rigorous"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "While we were walking in the park, the sky turned dark and it (        ) started to rain.",
-    "options": [
-      "initially",
-      "reluctantly",
-      "scarcely",
-      "suddenly"
-    ],
-    "correctAnswer": 3
-  },
-  {
-    "question": "We need to plant more trees to (        ) the natural habitat of wild animals.",
-    "options": [
-      "abandon",
-      "protect",
-      "negotiate",
-      "evaluate"
-    ],
-    "correctAnswer": 1
-  },
-  {
-    "question": "The bus driver asked every (        ) to wear a seatbelt for safety.",
-    "options": [
-      "ancestor",
-      "opponent",
-      "passenger",
-      "descendant"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "Online shopping is very (        ) because you can buy things without leaving your home.",
-    "options": [
-      "convenient",
-      "redundant",
-      "superficial",
-      "obsolete"
-    ],
-    "correctAnswer": 0
-  },
-  {
-    "question": "After practicing every day, my English communication skills (        ) improved.",
-    "options": [
-      "instantly",
-      "desperately",
-      "gradually",
-      "deliberately"
-    ],
-    "correctAnswer": 2
-  },
-  {
-    "question": "The company plans to (        ) a new system to make work more efficient.",
+    "question": "We should try to (        ) the amount of plastic waste we produce every day.",
     "options": [
       "implement",
-      "transform",
-      "modify",
-      "introduce"
+      "reduce",
+      "fluctuate",
+      "deteriorate"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "Online shopping is very (        ) because you can buy things without leaving your house.",
+    "options": [
+      "conspicuous",
+      "meticulous",
+      "vulnerable",
+      "convenient"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "The main (        ) of this meeting is to decide on the budget for next year.",
+    "question": "After a long flight, they finally arrived at their holiday (        ) in Spain.",
     "options": [
-      "obligation",
-      "purpose",
-      "obstacle",
-      "hypothesis"
+      "destination",
+      "controversy",
+      "precedent",
+      "congestion"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "The earth's temperature is (        ) rising due to global warming.",
+    "options": [
+      "simultaneously",
+      "reluctantly",
+      "gradually",
+      "perpetually"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Teachers always (        ) their students to ask questions during class.",
+    "options": [
+      "subsidize",
+      "encourage",
+      "scrutinize",
+      "jeopardize"
     ],
     "correctAnswer": 1
+  },
+  {
+    "question": "They wore (        ) Japanese clothes, such as kimonos, for the New Year festival.",
+    "options": [
+      "ambiguous",
+      "formidable",
+      "traditional",
+      "redundant"
+    ],
+    "correctAnswer": 2
+  },
+  {
+    "question": "Many people are worried about air (        ) caused by factory smoke.",
+    "options": [
+      "discrepancy",
+      "pollution",
+      "infrastructure",
+      "accumulation"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "It started to rain heavily, but (        ) I had an umbrella in my bag.",
+    "options": [
+      "fortunately",
+      "seemingly",
+      "inherently",
+      "inadvertently"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "Washing your hands is one of the best ways to (        ) the spread of colds.",
+    "options": [
+      "alleviate",
+      "advocate",
+      "foster",
+      "prevent"
+    ],
+    "correctAnswer": 3
+  },
+  {
+    "question": "Studying abroad is a great (        ) to learn about different cultures and make new friends.",
+    "options": [
+      "negligence",
+      "constraint",
+      "opportunity",
+      "transaction"
+    ],
+    "correctAnswer": 2
   }
 ]
